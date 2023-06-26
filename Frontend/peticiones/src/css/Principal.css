@@ -1,0 +1,136 @@
+.gugi{
+    font-family: 'Gugi', sans-serif;
+}
+
+.navegacion_sin_inicio{
+    @apply mx-8 shadow-lg shadow-sky-500/50 mb-8 mt-1 border rounded-full bg-white border-b-4  border-sky-500 flex flex-auto justify-between;
+ 
+ 
+}
+.navegacion_inicio{
+   @apply mx-8 shadow-lg shadow-yellow-500/50 mb-8 mt-1 border rounded-full bg-white border-b-4  border-yellow-500 flex flex-auto justify-between
+}
+.navegacion_admin{
+  @apply mx-8 shadow-lg shadow-red-500/50 mb-8 mt-1 border rounded-full bg-white border-b-4  border-red-500 flex flex-auto justify-between
+}
+.boton_inicio_nav{
+    @apply flex flex-col focus:outline-none text-white bg-orange-500 hover:bg-green-800 focus:ring-4 focus:ring-white font-medium rounded-lg text-sm px-5 py-2.5 mr-4 mb-2 dark:hover:bg-green-700 dark:focus:ring-orange-800 ;
+}
+.boton_solicitudes_pend{
+  @apply text-cyan-700 hover:text-white border border-cyan-700 hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 dark:border-cyan-500 dark:text-cyan-500 dark:hover:text-white dark:hover:bg-cyan-500 dark:focus:ring-cyan-800 mt-4 ml-4 mb-2
+}
+.boton_solicitudes_realizadas{
+  @apply text-yellow-500 hover:text-white border border-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 dark:border-yellow-500 dark:text-yellow-500 dark:hover:text-white dark:hover:bg-yellow-500 dark:focus:ring-cyan-800 mt-4 ml-4 mb-2
+}
+.boton_registrar_usuarios{
+  @apply text-lime-700 hover:text-white border border-lime-700 hover:bg-lime-800 focus:ring-4 focus:outline-none focus:ring-lime-300 font-medium rounded-lg text-sm px-6 py-2.5 text-center mr-2  dark:border-lime-500 dark:text-lime-500 dark:hover:text-white dark:hover:bg-lime-500 dark:focus:ring-lime-800 mt-4 ml-4 mb-2
+}
+.boton_hacer_solicitud{
+    @apply text-yellow-500 hover:text-white border border-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 dark:border-yellow-500 dark:text-yellow-500 dark:hover:text-white dark:hover:bg-yellow-500 dark:focus:ring-cyan-800 mt-4 ml-4 mb-2
+}
+.boton_historial{
+    @apply text-lime-700 hover:text-white border border-lime-700 hover:bg-lime-800 focus:ring-4 focus:outline-none focus:ring-lime-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2  dark:border-lime-500 dark:text-lime-500 dark:hover:text-white dark:hover:bg-lime-500 dark:focus:ring-lime-800 mt-4 ml-4 mb-2
+}
+.icon_desplazar{
+    @apply text-yellow-400 text-4xl hover:text-yellow-600 mx-6
+}
+.icon_desplazar_admin{
+  @apply text-red-400 text-4xl hover:text-red-600 mx-6
+}
+.fondo_iniciar{
+    @apply bg-gradient-to-br from-indigo-400 via-blue-100 to-pink-100;
+    min-height: 100vh; 
+    display: flex; /* Agrega display flex */
+    flex-direction: column; /* Agrega flex-direction row */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.dropdown-container {
+   @apply mt-48 ml-16;
+    position: absolute;
+    z-index: 1;
+  }
+  .dropdown-user{
+    @apply -mt-5 mr-48 -ml-40 ;
+    position: absolute;
+    
+    z-index: 1;
+  }
+  .dropdown-menu-user {
+    @apply bg-white shadow-lg rounded-lg px-32 py-5 shadow-yellow-500/50  border-yellow-500  ;
+    position: relative;
+ 
+
+  }
+  .boton_cerrar{
+    @apply text-red-400 text-4xl hover:text-red-600 
+  }
+  .opciones_drop_historial{
+    
+    @apply  text-lime-700 hover:text-white border border-lime-700 hover:bg-lime-800 focus:ring-4 focus:outline-none focus:ring-lime-300 font-medium rounded-lg text-sm  text-center mr-2  dark:border-lime-500 dark:text-lime-500 dark:hover:text-white dark:hover:bg-lime-500 dark:focus:ring-lime-800 mb-2 p-3 mt-3;
+  }
+  .opciones_drop_solicitud{
+    
+    @apply  text-yellow-500 hover:text-white border border-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm text-center mr-2 dark:border-yellow-500 dark:text-yellow-500 dark:hover:text-white dark:hover:bg-yellow-500 dark:focus:ring-cyan-800 mb-2 p-3 mt-3;
+  }
+
+  .opciones_drop_solicitudes_pend{
+    @apply text-cyan-700 hover:text-white border border-cyan-700 hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm  text-center mr-2  dark:border-lime-500 dark:text-cyan-500 dark:hover:text-white dark:hover:bg-cyan-500 dark:focus:ring-cyan-800 mb-2 p-3 mt-3
+  }
+
+  .opciones_drop_solicitudes_realizadas{
+    @apply text-yellow-500 hover:text-white border border-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm text-center mr-2 dark:border-yellow-500 dark:text-yellow-500 dark:hover:text-white dark:hover:bg-yellow-500 dark:focus:ring-cyan-800 mb-2 p-3 mt-3
+  }
+
+  .opciones_drop_registrar_user{
+    @apply text-lime-700 hover:text-white border border-lime-700 hover:bg-lime-800 focus:ring-4 focus:outline-none focus:ring-lime-300 font-medium rounded-lg text-sm  text-center mr-2  dark:border-lime-500 dark:text-lime-500 dark:hover:text-white dark:hover:bg-lime-500 dark:focus:ring-lime-800 mb-2 p-3 mt-3;
+  }
+  .dropdown-menu {
+
+     @apply bg-white shadow-lg rounded-lg   px-3  shadow-yellow-500/50  border-yellow-500  ;
+    position: relative;
+    float: left; /* Esto hace que el menú flote */
+    clear: both;
+  }
+.fondo_user{
+    @apply bg-gradient-to-br from-yellow-100 via-yellow-300 to-yellow-500;
+    min-height: 100vh; /* Establece el alto mínimo del contenedor al 100% de la altura de la ventana */
+    display: flex; /* Agrega display flex */
+    flex-direction: column; /* Agrega flex-direction row */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.fondo_admin{
+  @apply bg-gradient-to-r from-red-500 to-red-800;
+  min-height: 100vh; /* Establece el alto mínimo del contenedor al 100% de la altura de la ventana */
+  display: flex; /* Agrega display flex */
+  flex-direction: column; /* Agrega flex-direction row */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .texto {
+      display: none;
+    }
+  }
+@media(min-width: 955px) {
+
+     .esconder{
+        display: none;
+     }
+}
+@media(max-width: 955px) {
+
+    .esconder_opciones{
+       display: none;
+    }
+}
+    

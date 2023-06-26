@@ -1,0 +1,124 @@
+.gugi{
+    font-family: 'Gugi', sans-serif;
+}
+.logo{
+    @apply h-40 w-40;
+}
+.fondo_inicio {
+    @apply rounded-lg border-2 bg-white border-black shadow-2xl shadow-cyan-500/50 flex flex-col mx-auto;
+
+   
+
+}
+
+.titulo_inicio {
+    @apply gugi text-stone-950 pt-40  text-4xl;
+   
+}
+
+.input_inicio {
+    @apply rounded-full border-2 p-2.5 text-black w-full mb-4;
+}
+
+.boton_inicio {
+    @apply focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-4 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800;
+}
+
+.espacio_boton_inicio {
+    @apply pt-2;
+}
+
+.espacio_boton_registro {
+    @apply pb-2;
+}
+
+.boton_registro {
+    @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-4 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800;
+}
+
+.fondo {
+    @apply bg-gradient-to-r from-green-400 to-blue-500;
+    min-height: 100vh; /* Establece el alto mínimo del contenedor al 100% de la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+@media (min-width:320px)  { 
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+.titulo_inicio{
+    @apply text-2xl flex flex-col justify-center items-center pt-0 pb-4;
+ }
+ 
+    .fondo_inicio{
+        @apply rounded-lg border-2 bg-white border-black shadow-2xl shadow-cyan-500/50 flex flex-col mx-auto  ;
+        width: 90%;
+    
+    }
+}
+@media (min-width:480px)  { 
+    .titulo_inicio{
+        @apply text-2xl flex flex-col justify-center items-center pt-0 pb-4;
+     }
+
+     .fondo_inicio{
+        @apply rounded-lg border-2 bg-white border-black shadow-2xl shadow-cyan-500/50 flex flex-col mx-auto mt-3;
+       
+     }
+}
+@media (min-width:600px)  { 
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+.titulo_inicio{
+    @apply text-2xl flex flex-col justify-center items-center pt-0 pb-4;
+ }
+ .input_inicio{
+    @apply rounded-full border-2 p-1 text-black w-full mb-0
+ }
+ .fondo_inicio{
+    @apply rounded-lg border-2 bg-white border-black shadow-2xl shadow-cyan-500/50 flex flex-col mx-auto mt-3;
+    width: 50%; 
+    height: 70%;/* Ancho del elemento, ajustado al 90% del contenedor */
+    max-width: 1024px;
+ }
+
+}
+@media (min-width:801px)  { 
+    .titulo_inicio{
+        @apply text-4xl flex flex-col justify-center items-center pt-0 pb-4;
+     }}
+     .fondo_inicio{
+        @apply rounded-lg border-2 bg-white border-black shadow-2xl shadow-cyan-500/50 flex flex-col mx-auto mt-3;
+        width: 50%; 
+        height: 80%;
+        max-width: 1024px;
+     } 
+
+@media (min-width:1025px) {
+    .fondo_inicio{
+        @apply rounded-lg border-2 bg-white border-black shadow-2xl shadow-cyan-500/50 flex flex-col mx-auto mt-3;
+        width: 40%; 
+        height: 70%;
+        max-width: 1024px;
+     } 
+    .titulo_inicio{
+        @apply text-4xl flex flex-col justify-center items-center pt-0 pb-4;
+     }
+    
+}
+@media (min-width:1281px) { 
+     .titulo_inicio{
+        @apply text-4xl flex flex-col justify-center items-center pt-0 pb-4;
+     }
+     .fondo_inicio{
+        @apply rounded-lg border-2 bg-white border-black shadow-2xl shadow-cyan-500/50 flex flex-col mx-auto mt-20  ;
+        width: 40%; 
+        height: 75%;
+        max-width: 1024px;
+     } 
+     .espacio_boton_inicio{
+        @apply pt-8 pb-4;
+     }
+    
+ 
+}
+
+

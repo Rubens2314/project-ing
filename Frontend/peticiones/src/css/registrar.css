@@ -1,0 +1,209 @@
+.gugi {
+    font-family: 'Gugi', sans-serif;
+  }
+  
+  .contenedor_registro {
+    @apply rounded-lg bg-white border-2 border-black shadow-2xl shadow-cyan-500/50 w-1/2 mx-auto mt-10 mb-10;
+  }
+  .contenedor_registro_a{
+    @apply text-4xl ml-2;
+   
+ 
+  }
+  .contenedor_registro_h1 {
+    @apply gugi text-stone-950 pt-10 pb-10 pr-4 text-3xl  ;
+
+  }
+
+  .my-swal-container .swal2-confirm {
+    @apply text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm text-center mr-2 mb-2 !important; /* Color de fondo para el botón de confirmación */
+   
+  }
+ 
+  .my-swal-container .swal2-cancel {
+    @apply text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 !important;
+   
+   }
+ 
+  
+  .titulo_input_r {
+    @apply flex justify-start pr-4 pl-4 mb-2 mt-4 gugi font-medium text-orange-600;
+  }
+  
+  .titulo_input_r_2 {
+    @apply mt-4 mr-64 gugi font-medium text-orange-600;
+  }
+  .diseño_input {
+    @apply rounded-full border-2 px-4 mx-4 text-black w-full;
+  }
+  
+  .diseño_input_select {
+    @apply rounded-full border-2 text-black w-52;
+  }
+  
+
+    
+  .diseño_completa {
+    @apply ml-4 text-sm px-4 text-red-500 dark:text-red-500;
+  }
+  
+  .diseño_completa_v {
+    @apply ml-4 text-sm px-4 text-green-500 dark:text-green-500;
+  }
+  .boton_registro_user {
+    @apply focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-4 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800;
+  }
+  
+  .fondo_registro {
+    @apply bg-gradient-to-r from-teal-200 to-lime-200;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  @media (min-width:320px)  { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .titulo_input_r {
+      @apply flex justify-start ml-20 pr-4 pl-4 mb-2 mt-4 gugi font-medium text-orange-600; 
+     }
+    .contenedor_registro {
+      @apply w-5/6 mx-auto mt-10 mb-10;
+    }
+    .titulo_input_r_2 {
+      @apply mt-4 mr-20 gugi font-medium text-orange-600;
+    }
+    .diseño_input {
+      @apply rounded-full border-2 mx-10 text-black w-full;
+    }
+    .diseño_completa {
+      @apply  text-sm ml-20 text-red-500 dark:text-red-500;
+    }
+    .diseño_completa_v {
+      @apply text-sm ml-20 text-green-500 dark:text-green-500;
+    }
+
+  }
+    @media (min-width:480px)  { 
+    /* smartphones, Android phones, landscape iPhone */ 
+
+    .contenedor_registro {
+      @apply w-5/6 mx-auto mt-10 mb-10;
+    }
+    .titulo_input_r_2 {
+      @apply mt-4 mr-20 gugi font-medium text-orange-600;
+    }
+    }
+    @media (min-width:600px)  { 
+    /*portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .titulo_input_r {
+      @apply flex justify-start ml-20 pr-4 pl-4 mb-2 mt-4 gugi font-medium text-orange-600;
+    }
+    .contenedor_registro {
+      @apply w-3/4 mx-auto mt-10 mb-10;
+    }
+    .titulo_input_r_2 {
+      @apply mt-4 mr-12 gugi font-medium text-orange-600;
+    }
+    .diseño_input {
+      @apply rounded-full border-2 mx-10 text-black w-full;
+    }
+    .diseño_completa {
+      @apply  text-sm ml-20 text-red-500 dark:text-red-500;
+    }
+    
+    .diseño_completa_v {
+      @apply text-sm ml-20 text-green-500 dark:text-green-500;
+    }
+    }
+    @media (min-width:801px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .titulo_input_r {
+      @apply flex justify-start ml-20 pr-4 pl-4 mb-2 mt-4 gugi font-medium text-orange-600;
+    }
+    
+    .titulo_input_r_2 {
+      @apply mt-4 mr-24 gugi font-medium text-orange-600;
+    }
+    .diseño_input {
+      @apply rounded-full border-2 mx-14 text-black w-full;
+    }
+    .diseño_completa {
+      @apply  text-sm ml-11 text-red-500 dark:text-red-500;
+    }
+    
+    .diseño_completa_v {
+      @apply text-sm ml-11 text-green-500 dark:text-green-500;
+    }
+    }
+    @media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    .titulo_input_r {
+      @apply flex justify-start ml-20 pr-4 pl-4 mb-2 mt-4 gugi font-medium text-orange-600;
+    }
+    
+    .titulo_input_r_2 {
+      @apply mt-4 mr-32 gugi font-medium text-orange-600;
+    }
+    .diseño_input {
+      @apply rounded-full border-2 mx-14 text-black w-full;
+    }
+    .diseño_completa {
+      @apply  text-sm ml-20 text-red-500 dark:text-red-500;
+    }
+    
+    .diseño_completa_v {
+      @apply text-sm ml-20 text-green-500 dark:text-green-500;
+    }
+    }
+    @media (min-width:1281px) { 
+    /* hi-res laptops and desktops */ 
+    .contenedor_registro {
+      @apply w-1/2 mx-auto mt-10 mb-10;
+    }
+    .titulo_input_r {
+      @apply flex justify-start ml-16 pr-4 pl-4 mb-2 mt-4 gugi font-medium text-orange-600;
+    }
+    
+    .titulo_input_r_2 {
+      @apply mt-4 mr-44 gugi font-medium text-orange-600;
+    }
+    .diseño_input {
+      @apply rounded-full border-2 mx-16 text-black w-full;
+    }
+    .diseño_completa {
+      @apply  text-sm ml-16 text-red-500 dark:text-red-500;
+    }
+    
+    .diseño_completa_v {
+      @apply text-sm ml-16 text-green-500 dark:text-green-500;
+    }
+   
+    }
+
+    @media (min-width:1300px) { 
+      /* hi-res laptops and desktops */ 
+      .contenedor_registro {
+        @apply w-1/2 mx-auto mt-10 mb-10;
+      }
+      .titulo_input_r {
+        @apply flex justify-start ml-16 pr-4 pl-4 mb-2 mt-4 gugi font-medium text-orange-600;
+      }
+      
+      .titulo_input_r_2 {
+        @apply mt-4 mr-44 gugi font-medium text-orange-600;
+      }
+      .diseño_input {
+        @apply rounded-full border-2 mx-16 text-black w-full;
+      }
+      .diseño_completa {
+        @apply  text-sm ml-16 mr-16 text-red-500 dark:text-red-500;
+      }
+      
+      .diseño_completa_v {
+        @apply text-sm ml-16 text-green-500 dark:text-green-500;
+      }
+     
+      }
